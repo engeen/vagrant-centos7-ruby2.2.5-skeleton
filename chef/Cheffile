@@ -1,0 +1,12 @@
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'chef-client'
+cookbook 'yum'
+cookbook 'selinux', '~> 0.9.0'
+cookbook 'rvm', '~> 0.9.4'
+cookbook 'git', '~> 4.3'
+cookbook 'ssh_authorized_keys', '~> 0.3.0'
+cookbook 'docker', '~> 2.9.3'
+cookbook 'chef_nginx'
+cookbook 'postgresql', '~> 6.1.1'
+cookbook 'firewalld', '~> 1.1.5'

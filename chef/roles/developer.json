@@ -1,0 +1,19 @@
+{
+    "name": "developer",
+    "description": "This is a development box server role",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+      
+    },
+    "override_attributes": {
+    },
+    "env_run_lists" : {
+        "development" : [
+        	"recipe[rvm-ruby]",
+            "recipe[devbox_chefdk]",
+            "recipe[postgresql]",
+            "recipe[postgresql::server]"
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+name 'devbox_chefdk'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures devbox_chefdk'
+long_description 'Installs/Configures devbox_chefdk'
+version '0.1.0'
