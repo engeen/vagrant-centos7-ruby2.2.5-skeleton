@@ -4,7 +4,7 @@ require 'fileutils'
 
 CONFIG = File.join(File.dirname(__FILE__), "vagrant.local.rb")
 
-$dev_ip = "192.168.12.100"
+$dev_ip = "192.168.3.2"
 $dev_memory = 4096
 
 
@@ -112,6 +112,7 @@ Vagrant.configure("2") do |config|
 
     # Use Chef Solo to provision our virtual machine
     dev.vm.provision :chef_solo do |chef|
+      chef.version = "12.20.3"
       chef.cookbooks_path = ["chef/cookbooks", "chef/site-cookbooks"]
       chef.environments_path = "chef/environments"
       chef.roles_path = "chef/roles"
